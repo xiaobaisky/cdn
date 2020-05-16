@@ -1,7 +1,7 @@
 在footer.pug最后加上
 ```
 if (theme.time.enable)
-  .sitetime
+  #sitetime
 ```
 config.yml配置
 ```

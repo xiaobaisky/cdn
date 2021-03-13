@@ -117,3 +117,9 @@ svg.icon {
    fill: currentColor;
    overflow: hidden;
 }
+# 音乐播放器收入侧边栏
+.aplayer.aplayer-fixed.aplayer-narrow 
+  .aplayer-body
+    left: -66px !important
+  .aplayer-body:hover
+    left: 0px !important

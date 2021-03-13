@@ -152,3 +152,11 @@ svg.icon {
       background: rgba(0, 0, 0, 0.5)!important;
       color: #ffffff;
       }
+@font-face{
+  font-family:'langman' ;  /* 字体名自定义即可 */
+  src:url('/fonts/langman.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+h1#site-title {
+  font-family: 'langman', sans-serif;
+}

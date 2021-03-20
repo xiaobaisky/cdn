@@ -236,13 +236,12 @@ h4 {
 }
 
 .hppt_panel-body {
-    padding: 15px;
-    background-color: #9BCD9B
+    padding: 15px
 }
 
 .hppt_panel-footer {
     border-radius: 0 0 3px 3px;
-    /* padding: 10px 15px;*/
+    padding: 10px 15px;
     background-color: #f5f5f5;
     background-color: #90939920;
     border: 1px solid transparent!important

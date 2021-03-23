@@ -1,99 +1,20 @@
-/* bb哔哔 */
-/* bb样式 */
-
-.timeline ul li{
-  position: relative;
-  padding-left: 2.5rem;
-}
-
-/* 标题 */
-.bb-info{
-  display: inline;
-  float: right;
-  line-height: 3.7rem;
-  color: var(--heo-secondtext);
-}
-
-/* 每条动态 */
-#bber > section > ul > div > li > div{
-  display: flex;
-  flex-direction: initial;
-  flex-wrap: wrap;
-  background: var(--heo-post-blockquote-bg);
-  box-shadow: var(--heo-shadow-lightblack);
-  border-radius: 12px;
-  padding: 8px 16px;
-  margin-top: 12px;
-}
-
-#bber p{
-  margin: 0;
-}
-
-#bber .datafrom i{
-  margin-right: 4px;
-}
-
-/* 时间 */
-#bber > section > ul > div > li > div .datatime{
-  order: 1;
-  color: var(--heo-secondtext);
-  font-size: 0.6rem;
-}
-
-/* 内容 */
-#bber > section > ul > div > li > div .datacont{
-  order: 0;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--heo-lighttext);
-  width: 100%;
-  line-height: 1.38;
-  margin: 8px 0;
-}
-
-/* 设备 */
-#bber > section > ul > div > li > div .datafrom{
-  order: 2;
-  color: var(--heo-secondtext);
-  font-size: 0.6rem!important;
-  margin-left: 8px;
-}
-#bber > section > ul > div > li > div .datafrom small{
-  font-size: 100%;
-}
-
-/* 时间线 */
-.timeline ul li::before {
-  position: absolute;
-  top: 0.5rem;
-  left: 0rem;
-  z-index: 1;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 8px;
-  background: var(--card-bg);
-  content: "";
-  background-image: url(https://cdn.jsdelivr.net/gh/zhheo/Guli@0.6/img/avatar.png);
-  background-size: 2rem;
-}
-
-/* 加载更多 */
-.load-btn.button-load{
-  background: var(--heo-card-btn-bg);
-  color: var(--heo-fontcolor);
-  padding: 12px 12px;
-  margin: 8px 0;
-  width: 100%;
-  text-align: center;
-  border-radius: 12px;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.load-btn.button-load:hover{
-  background: var(--heo-main);
-  color: var(--heo-white);
-  transition: 0.3s;
-  box-shadow: var(--heo-shadow-blue);
-}
+  .timeline ul {margin:0;}
+  .timeline ul li {background:#3b3d42;list-style-type:none;position:relative;width:3px;margin-left:2em;padding:0.8em 0 2em;}
+  .timeline ul li::after {transform: rotate(45deg);content:'';background-color: #3b3d42;display: block;position: absolute;top: 10px;left: -5px;width: 0.8em;height: 0.8em;outline: 15px solid #fff;}
+  .timeline ul li div {position:relative;top:-13px;left:3em;width:670px;padding:0px 16px 0px;}
+  .timeline ul li p.datatime{color: #fafafa;font-size: 0.75em;font-style: italic;background-color: #3b3d42;display: inline-block;padding:0.25em 1em 0.2em 1em;}
+  .timeline ul li p.datacont{margin:0.65em 0 0.3em;}
+  .timeline ul li p.datacont img{display:block;width:100%;}
+  .timeline ul li p.datacont img[src*="emotion"]{display:inline-block;width:auto;}
+  .timeline ul li p.datafrom{color: #aaa;font-size: 0.75em !important;font-style: italic;}
+  .timeline ul li p{margin:0;font-size:16px;letter-spacing:1px;color: #3b3d42;}
+  button{border-radius:0;}
+  .dark-theme .timeline ul li div p{color:#fafafa;}
+  .dark-theme .timeline ul li div p svg{fill:#fafafa;}
+  .dark-theme .timeline ul li p.datafrom{color: #aaa;}
+  .dark-theme .timeline ul li{background:#3b3d42;}
+  .dark-theme .timeline ul li::after{outline: 15px solid #292a2d;}
+  @media (max-width:860px) {
+    .timeline ul li{margin-left:0;}
+    .timeline ul li div{width:calc(100vw - 75px);left:30px;}
+  }
